@@ -30,10 +30,6 @@ run_notebook(){
 #!/bin/bash
 echo "*** SLURM BATCH JOB 'notebook_run' of '${NOTEBOOK_NAME}' STARTING ***"
 
-# Setup the conda env
-source \$HOME/miniconda3/etc/profile.d/conda.sh
-conda activate cs236781-hw
-
 # Run the notebook 
 python -m main run-nb ${NOTEBOOK_PATH}
 
